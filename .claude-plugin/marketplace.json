@@ -1,0 +1,19 @@
+{
+  "name": "aid",
+  "description": "AI Aided Development — structured workflow for requirements, architecture, and implementation planning in Claude Code.",
+  "owner": {
+    "name": "Vojislav Marinkovic",
+    "url": "https://github.com/gabga"
+  },
+  "plugins": [
+    {
+      "name": "aid",
+      "source": {
+        "source": "github",
+        "repo": "gabga/aid"
+      },
+      "description": "AI-Driven Workflow — structured workflow for requirements, architecture, and implementation planning.",
+      "homepage": "https://github.com/gabga/aid"
+    }
+  ]
+}

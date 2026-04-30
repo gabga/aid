@@ -1,6 +1,12 @@
 {
   "name": "aid",
   "description": "AI-Driven Workflow — structured workflow for requirements, architecture, and implementation planning.",
-  "version": "1.0.0",
-  "license": "MIT"
+  "license": "MIT",
+  "author": {
+    "name": "Vojislav Marinkovic",
+    "url": "https://github.com/gabga"
+  },
+  "homepage": "https://github.com/gabga/aid",
+  "repository": "https://github.com/gabga/aid",
+  "keywords": ["workflow", "requirements", "architecture", "planning", "documentation", "product"]
 }
