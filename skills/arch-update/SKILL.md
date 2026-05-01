@@ -114,13 +114,14 @@ Ask: "Does this look right? Should I proceed?"
 
 Only after user approval:
 1. Update architecture document(s) — modify affected sections.
-2. Update requirement's `Related Architecture` field.
-3. Update `docs/architecture/index.md` — reflect the new Features Covered for every affected component:
+2. Add a Change Log entry per the standing rules in CLAUDE.md.
+3. Update requirement's `Related Architecture` field. Add a Change Log entry to each updated requirement per the standing rules in CLAUDE.md.
+4. Update `docs/architecture/index.md` — reflect the new Features Covered for every affected component:
    - **Absorb:** add the feature name to the component's row.
    - **Re-link:** remove the feature name from the source component's row; add it to the destination component's row.
    - **De-link:** remove the feature name from the source component's row.
    - **Update:** no change to the index needed (ownership didn't move).
-4. If Ownership Boundaries changed, verify they don't overlap with other components' boundaries in a contradictory way. If they do, flag it to the user.
+5. If Ownership Boundaries changed, read all other architecture documents and check for contradictory overlaps: the same entity in two components' owned entities lists, the same API prefix in two components' owned API prefixes, or the same responsibility claimed by two components. If any overlap is found, flag each conflict to the user with the two components involved and the overlapping item — do not resolve it automatically.
 
 ## Step 6: Verify Consistency
 

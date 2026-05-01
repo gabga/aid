@@ -13,6 +13,8 @@ Run this early — after `/product` — to create a stub with the basics (ID for
 
 ## Principles
 
+Follow the interaction principles and standing rules in CLAUDE.md. Additional principles specific to this command:
+
 - **Propose a complete set of defaults up front.** Most projects use the same patterns. The user should only need to flag what they want to change — not answer a question per convention.
 - **Derive defaults from `docs/tech_stack.md` where possible.** If the tech stack shows JWT auth, Bearer token is the natural default. If it shows PostgreSQL, UUIDs are a natural ID format.
 - **Be concrete and complete.** Vague conventions cause inconsistency. Every convention must be specific enough that two developers independently make the same choice.
@@ -176,7 +178,7 @@ Ask: "Does this look right? Anything to adjust before I make the changes?"
 
 Only after user approval:
 1. Edit only the affected sections.
-2. Add a Change Log entry with date/time in `YYYY-MM-DD HH:MM TZ` format, a concise summary, and the reason.
+2. Add a Change Log entry per the standing rules in CLAUDE.md.
 3. If any conventions were marked as provisional and are now confirmed, remove the provisional note.
 
 ---

@@ -33,7 +33,7 @@ Once identified, derive the feature slug per the conventions in CLAUDE.md. Then:
 
 - **If the feature has an existing brief** (`docs/features/<slug>.md` exists): show the current Status and a one-line summary. Ask: "This feature brief already exists. Do you want to update it, or is this a different feature?" If updating, proceed to [Update](#update). If it's a different feature, clarify and repeat.
 - **If the feature is in `docs/product.md` but has no brief**: proceed to [Create](#create).
-- **If the feature is not in `docs/product.md`**: ask which area or group it belongs to within the product. Add it to the appropriate section of `docs/product.md`, then proceed to [Create](#create).
+- **If the feature is not in `docs/product.md`**: ask which area or group it belongs to within the product. Add it to the appropriate section of `docs/product.md` and add a Change Log entry to `docs/product.md` per the standing rules in CLAUDE.md, then proceed to [Create](#create).
 
 ---
 
@@ -97,6 +97,7 @@ Only after user approval:
 2. Set Status to `Scoped` if all open questions are resolved; `Concept` if open questions remain.
 3. Fill in all sections. Use "None" for sections that don't apply.
 4. Add the feature to `docs/features/index.md`.
+5. Update `docs/glossary.md` per the standing rules in CLAUDE.md if new domain terms were introduced.
 
 If Status is `Scoped` with no open questions, suggest: "This feature is ready for requirements. Run `/requirement` to write the technical spec."
 

@@ -11,6 +11,8 @@ You are a senior tech lead with broad experience selecting and justifying techno
 
 ## Principles
 
+Follow the interaction principles and standing rules in CLAUDE.md. Additional principles specific to this command:
+
 - **Only ask about what applies.** If the project has no mobile app, skip that section entirely. If it's an API-only backend, skip all frontend sections.
 - **Accept "TBD" or "not decided yet" for any choice.** Mark it clearly in the file. Don't force decisions that haven't been made.
 - **Offer options when the user is unsure.** Suggest 2-3 common choices for each decision point.
@@ -146,7 +148,7 @@ Ask: "Does this look right? Anything to adjust before I make the changes?"
 
 Only after user approval:
 1. Edit only the affected sections.
-2. Add a Change Log entry with date/time in `YYYY-MM-DD HH:MM TZ` format, a concise summary, and the reason.
+2. Add a Change Log entry per the standing rules in CLAUDE.md.
 3. If any conventions in `docs/conventions.md` were marked as provisional pending this tech decision, flag them: "Now that the tech stack is confirmed, these provisional conventions may need updating — run `/conventions` to review them."
 
 ---

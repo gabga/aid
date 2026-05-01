@@ -120,7 +120,7 @@ Ask: "Does this look right? Anything to adjust before I make the changes?"
 
 Only after user approval:
 1. Edit only the affected sections of `docs/product.md`.
-2. Add a Change Log entry with date/time in `YYYY-MM-DD HH:MM TZ` format, a concise summary, and the reason.
+2. Add a Change Log entry per the standing rules in CLAUDE.md.
 3. If new domain terms were introduced, update `docs/glossary.md` per the standing rules in CLAUDE.md.
 4. If new features were added to the Feature Map, add corresponding rows to `docs/features/index.md` and `docs/requirements/index.md`.
 

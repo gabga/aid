@@ -16,25 +16,31 @@ Check whether the project has already been bootstrapped by reading `CLAUDE.md` a
 - If `CLAUDE.md` exists but does not contain AID workflow content, warn: "A `CLAUDE.md` already exists but does not appear to be an AID project. Proceeding will overwrite it. Do you want to continue?"
 - If `CLAUDE.md` does not exist, proceed.
 
+Also check which stub files already exist:
+- `docs/glossary.md`
+- `docs/features/index.md`
+- `docs/requirements/index.md`
+- `docs/architecture/index.md`
+
+Note which exist and which do not — existing files will be skipped in Step 3 to avoid overwriting user content.
+
 ## Step 2: Propose Before Creating
 
-Tell the user:
+Tell the user which files will be created and which will be skipped (because they already exist). For example:
 
-> "I will create the following structure in this repository:
+> "I will create the following files:
 >
 > ```
-> docs/
->   glossary.md          — domain terminology (updated by all skills)
->   features/
->     index.md
->   requirements/
->     index.md
->   architecture/
->     index.md
-> CLAUDE.md              — AID workflow governance file
+> docs/glossary.md
+> docs/features/index.md
+> docs/requirements/index.md
+> docs/architecture/index.md
+> CLAUDE.md
 > ```
 >
-> No existing files will be modified. Shall I proceed?"
+> *(List any already-existing files as skipped, e.g. "docs/glossary.md already exists — will not be overwritten.")*
+>
+> Shall I proceed?"
 
 Wait for confirmation before creating any files.
 
@@ -44,7 +50,7 @@ Only after user confirmation:
 
 1. Read `${CLAUDE_SKILL_DIR}/../../assets/CLAUDE.md` and write it to `./CLAUDE.md`.
 
-2. Create `docs/` stubs by reading each asset and writing to the corresponding `docs/` path:
+2. Create `docs/` stubs — for each file below, skip it if it already exists; otherwise read the asset and write to the target path:
    - Read `${CLAUDE_SKILL_DIR}/../../assets/stubs/glossary.md` → write to `docs/glossary.md`
    - Read `${CLAUDE_SKILL_DIR}/../../assets/stubs/features-index.md` → write to `docs/features/index.md`
    - Read `${CLAUDE_SKILL_DIR}/../../assets/stubs/requirements-index.md` → write to `docs/requirements/index.md`

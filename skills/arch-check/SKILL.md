@@ -18,9 +18,7 @@ Parse `$ARGUMENTS` to determine the check scope:
 
 ## Step 2: Spawn Analysis Agent
 
-Read `${CLAUDE_SKILL_DIR}/../../assets/architecture-best-practices.md` and substitute its full content as the Analysis 3 section of the agent prompt below.
-
-Construct the agent prompt below by filling in `{SCOPE_INSTRUCTIONS}` and `{BEST_PRACTICES_CONTENT}` based on the scope determined in Step 1 and the file read above:
+Construct the agent prompt below by filling in `{SCOPE_INSTRUCTIONS}` based on the scope determined in Step 1:
 
 - **Single requirement scope:** Replace `{SCOPE_INSTRUCTIONS}` with:
   `Focus on all requirement files in requirements/{feature-slug}/. Check them against all architecture documents. If the requirement directory does not exist, return an error stating that and stop.`
@@ -42,8 +40,11 @@ Then use the Task tool to launch an **Explore** agent with this prompt. Wait for
 > - All requirement documents: glob `docs/requirements/**/*.md`
 > - All architecture documents: glob `docs/architecture/*.md`
 > - `docs/conventions.md`
+> - `${CLAUDE_SKILL_DIR}/../../assets/architecture-best-practices.md`
 >
 > If no architecture documents exist (only `docs/architecture/index.md`), return: "No architecture documents exist yet. Run `/arch` to create one before running arch-check."
+>
+> If no requirement documents exist (i.e., `docs/requirements/index.md` has no data rows and no subdirectories contain `.md` files), return: "No requirements exist yet. Run `/requirement` to create some before running arch-check."
 >
 > ---
 >
@@ -94,7 +95,7 @@ Then use the Task tool to launch an **Explore** agent with this prompt. Wait for
 >
 > ### Analysis 3: Best Practices & Industry Standards
 >
-> {BEST_PRACTICES_CONTENT}
+> Apply the best practices checklist from `${CLAUDE_SKILL_DIR}/../../assets/architecture-best-practices.md` (read above).
 >
 > ---
 >

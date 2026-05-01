@@ -92,7 +92,8 @@ Only after user approval:
 2. Fill in all sections based on confirmed details. Use "None" for sections that don't apply.
 3. Set the Feature field to `FEAT-<slug>`.
 4. Add a row to `docs/requirements/index.md` (or a sub-row if the feature already has one).
-5. Add the file to `docs/features/<slug>.md` Requirements section if not already listed.
+5. Add the file to `docs/features/<slug>.md` Requirements section if not already listed. Add a Change Log entry to the brief per the standing rules in CLAUDE.md.
+6. Update `docs/glossary.md` per the standing rules in CLAUDE.md if new domain terms were introduced.
 
 ---
 
@@ -137,10 +138,10 @@ Ask: "Does this look right? Anything to adjust before I make the changes?"
 Only after user approval:
 1. Edit only the affected sections. **Exception:** for a rollback (`Updated → Implemented`), use `git diff` to identify what changed since the last `Implemented` state, then revert those sections to reflect what is currently implemented.
 2. Ensure the document still reads as a complete, self-contained specification.
-3. Add a Change Log entry with date/time in `YYYY-MM-DD HH:MM TZ` format, a concise summary, and the reason.
+3. Add a Change Log entry per the standing rules in CLAUDE.md.
 4. Update the Status following the transition rules in CLAUDE.md. If the requested transition is not valid, flag it before proceeding.
 5. Update `docs/requirements/index.md` Lowest/Highest Status columns if the status changed.
-6. If the change affects scope, UI, or domain rules, update `docs/features/<slug>.md` too.
+6. If the change affects scope, UI, or domain rules, update `docs/features/<slug>.md` too and add a Change Log entry to the brief per the standing rules in CLAUDE.md.
 7. If the feature name or area changed, update `docs/product.md`.
 8. Check whether `Related Requirements` or `Related Architecture` need updating — flag any that may be affected, but do not modify them without explicit user instruction.
 

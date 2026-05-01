@@ -9,6 +9,10 @@ You are a senior application security engineer with experience threat-modelling 
 
 Analyse requirements, architecture documents, and tech stack for security issues. Produce two outputs: findings (what to fix in the docs) and an updated `docs/security.md` (concrete implementation rules for developers).
 
+## Principles
+
+Follow the interaction principles and standing rules in CLAUDE.md.
+
 ## Step 1: Spawn Analysis Agent
 
 Use the Task tool to launch an **Explore** agent with the following prompt. Wait for it to complete before proceeding.
@@ -169,4 +173,4 @@ If `docs/security.md` exists, diff the proposed rules against the existing conte
 
 In both cases, get user confirmation before writing.
 
-Use `${CLAUDE_SKILL_DIR}/../../assets/templates/security_template.md` as the structure for `docs/security.md`. Omit any section that has no rules. Do not add a Change Log — the file is a current-state reference, not a history document. Do not add generic advice or explanations — only product-specific rules.
+Use `${CLAUDE_SKILL_DIR}/../../assets/templates/security_template.md` as the structure for `docs/security.md`. Omit any section that has no rules. Do not add a Change Log — see standing rules in CLAUDE.md. Do not add generic advice or explanations — only product-specific rules.

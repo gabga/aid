@@ -79,7 +79,7 @@ These apply to all AID commands.
 These apply whenever any AID command creates or modifies documents.
 
 - **Glossary:** Update `docs/glossary.md` whenever a new domain term is introduced or an existing term changes meaning.
-- **Change Log:** Add an entry to the document's Change Log whenever an existing document is modified. Include date (`YYYY-MM-DD HH:MM TZ`), summary, and reason.
+- **Change Log:** Add an entry to the document's Change Log whenever an existing document is modified. Include date (`YYYY-MM-DD HH:MM TZ`), summary, and reason. Exceptions: index files (`index.md`) and `docs/security.md` do not have Change Logs.
 - **Index files:** Update `docs/features/index.md`, `docs/requirements/index.md`, or `docs/architecture/index.md` whenever a document is created or its status changes.
 
 ## Feature Brief Lifecycle

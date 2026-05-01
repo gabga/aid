@@ -95,10 +95,11 @@ Only after user approval:
 3. Use ASCII diagrams for the System Context section.
 4. Write data flows as numbered steps.
 5. In Interfaces/APIs, link back to requirement documents (e.g., "See REQ-<feature-slug> for details").
+6. Update `docs/glossary.md` per the standing rules in CLAUDE.md if new domain terms were introduced.
 
 ## Step 6: Update Cross-References
 
-1. Set the `Related Architecture` field to `docs/architecture/<component>.md` in any requirements this document covers.
+1. Set the `Related Architecture` field to `docs/architecture/<component>.md` in any requirements this document covers. Add a Change Log entry to each updated requirement per the standing rules in CLAUDE.md.
 2. Add a row to `docs/architecture/index.md` with the component name, file path, and the names of features covered (from `docs/product.md`).
 
 ## Step 7: Final Review

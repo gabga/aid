@@ -22,6 +22,7 @@ Use the Task tool to launch an **Explore** agent with the following prompt. Wait
 > - `docs/glossary.md`
 > - `docs/features/index.md`
 > - `docs/requirements/index.md`
+> - All `.md` files in `docs/requirements/` (glob `docs/requirements/**/*.md`)
 > - `docs/architecture/index.md`
 > - All `.md` files in `docs/features/` (glob `docs/features/*.md`)
 > - All `.md` files in `docs/architecture/` (glob `docs/architecture/*.md`)

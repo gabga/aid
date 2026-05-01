@@ -14,6 +14,10 @@ You are a senior UX architect with experience defining navigation structures, in
 - After a set of feature briefs has been written and Scoped/Ready
 - When the navigation structure or page inventory has changed significantly
 
+## Principles
+
+Follow the interaction principles and standing rules in CLAUDE.md.
+
 ## Step 1: Gather Context
 
 Read silently:
@@ -51,7 +55,7 @@ Ask: "Does this look right? Anything to add or change?"
 
 ### Step C2: Write
 
-Only after user approval. Read `${CLAUDE_SKILL_DIR}/../../assets/templates/ui_overview_template.md` as the starting structure. Create `docs/ui-overview.md` with all sections filled in from the synthesised content.
+Only after user approval. Read `${CLAUDE_SKILL_DIR}/../../assets/templates/ui_overview_template.md` as the starting structure. Create `docs/ui-overview.md` with all sections filled in from the synthesised content. End the file with an empty Change Log section per the standing rules in CLAUDE.md.
 
 ---
 
@@ -81,7 +85,7 @@ Ask: "Does this look right? Anything to adjust before I make the changes?"
 
 Only after user approval:
 1. Edit only the affected sections.
-2. Add a Change Log entry with date/time in `YYYY-MM-DD HH:MM TZ` format, a concise summary, and the reason.
+2. Add a Change Log entry per the standing rules in CLAUDE.md.
 
 ---
 
