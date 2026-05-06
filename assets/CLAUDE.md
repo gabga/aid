@@ -59,10 +59,10 @@ All skills are plugin skills invoked with the `aid:` prefix.
 | 4 — Architecture | `/aid:arch` | Create a new architecture document |
 | 4 — Architecture | `/aid:arch-check` | Validate requirements and architecture alignment |
 | 4 — Architecture | `/aid:arch-update` | Sync architecture after requirement changes |
-| Tech Stack | `/aid:tech` | Define or update `docs/tech_stack.md` |
+| 5 — Tech Stack | `/aid:tech` | Define or update `docs/tech_stack.md` |
 | Anytime | `/aid:audit` | Full project consistency check |
 | Anytime | `/aid:status` | Snapshot of project state |
-| Anytime | `/aid:security` | Security analysis; updates `docs/security.md` |
+| Anytime | `/aid:security` | Analyse requirements, architecture, and tech stack for security issues; updates `docs/security.md` |
 
 `docs/conventions.md` is created early via `/aid:conventions` and updated continuously as requirements are written and new patterns emerge.
 

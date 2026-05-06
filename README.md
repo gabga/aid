@@ -1,6 +1,6 @@
 # AID — AI Aided Development
 
-A Claude Code plugin for AI-driven software product development. Define your product, features, requirements, and architecture in structured Markdown — then hand them to Claude to implement, test, and deploy.
+A Claude Code plugin for AI aided software product development. Define your product, features, requirements, and architecture in structured Markdown — then hand them to Claude to implement, test, and deploy.
 
 ## Install
 
@@ -26,7 +26,7 @@ This creates `CLAUDE.md`, `docs/glossary.md`, and the index files in your projec
 
 ## How it works
 
-AID structures the work of defining a software product into five layers:
+AID structures the work of defining a software product into seven layers:
 
 | Layer        | Documents                            | Purpose                                              |
 | ------------ | ------------------------------------ | ---------------------------------------------------- |
@@ -51,13 +51,13 @@ Requirements describe the **current desired state** of each feature. When a feat
 | 2 — Feature Design | `/aid:feature`          | Create or update a feature brief                          |
 | 2 — Feature Design | `/aid:ui`               | Create or update `docs/ui-overview.md`                    |
 | 3 — Specification  | `/aid:requirement`      | Write or update a technical requirement document          |
-| 4 — Architecture   | `/aid:arch` | Create a new architecture document                        |
+| 4 — Architecture   | `/aid:arch`             | Create a new architecture document                        |
 | 4 — Architecture   | `/aid:arch-check`       | Validate requirements and architecture alignment          |
 | 4 — Architecture   | `/aid:arch-update`      | Sync architecture after requirement changes               |
-| Tech Stack         | `/aid:tech`             | Define or update `docs/tech_stack.md`                     |
+| 5 — Tech Stack     | `/aid:tech`             | Define or update `docs/tech_stack.md`                     |
 | Anytime            | `/aid:audit`            | Full project consistency check                            |
 | Anytime            | `/aid:status`           | Snapshot of project state                                 |
-| Anytime            | `/aid:security`   | Security analysis; updates `docs/security.md`             |
+| Anytime            | `/aid:security`         | Analyse requirements, architecture, and tech stack for security issues; updates `docs/security.md` |
 
 ## License
 
