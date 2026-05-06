@@ -42,9 +42,9 @@ Then use the Task tool to launch an **Explore** agent with this prompt. Wait for
 > - `docs/conventions.md`
 > - `${CLAUDE_SKILL_DIR}/../../assets/architecture-best-practices.md`
 >
-> If no architecture documents exist (only `docs/architecture/index.md`), return: "No architecture documents exist yet. Run `/arch` to create one before running arch-check."
+> If no architecture documents exist (only `docs/architecture/index.md`), return: "No architecture documents exist yet. Run `/aid:arch` to create one before running arch-check."
 >
-> If no requirement documents exist (i.e., `docs/requirements/index.md` has no data rows and no subdirectories contain `.md` files), return: "No requirements exist yet. Run `/requirement` to create some before running arch-check."
+> If no requirement documents exist (i.e., `docs/requirements/index.md` has no data rows and no subdirectories contain `.md` files), return: "No requirements exist yet. Run `/aid:requirement` to create some before running arch-check."
 >
 > ---
 >

@@ -4,6 +4,14 @@ A Claude Code plugin for AI-driven software product development. Define your pro
 
 ## Install
 
+First, add the marketplace:
+
+```
+/plugin marketplace add https://github.com/gabga/aid
+```
+
+Then install the plugin:
+
 ```
 /plugin install aid
 ```
@@ -36,8 +44,8 @@ Requirements describe the **current desired state** of each feature. When a feat
 
 | Phase              | Skill                   | What it does                                              |
 | ------------------ | ----------------------- | --------------------------------------------------------- |
-| Setup              | `/aid:bootstrap`        | Create `docs/` structure and `CLAUDE.md` in a new project |
-| Setup              | `/aid:update`           | Update `CLAUDE.md` to the latest plugin version           |
+| Setup              | `/aid:bootstrap`        | Create `docs/` structure, stubs, and `CLAUDE.md` in a new project |
+| Setup              | `/aid:update`           | Update `CLAUDE.md` and stubs to the latest plugin version |
 | 1 — Foundation     | `/aid:product`          | Create `docs/product.md` and seed the glossary            |
 | 1 — Foundation     | `/aid:conventions`      | Create `docs/conventions.md`; grows alongside requirements |
 | 2 — Feature Design | `/aid:feature`          | Create or update a feature brief                          |
@@ -46,7 +54,7 @@ Requirements describe the **current desired state** of each feature. When a feat
 | 4 — Architecture   | `/aid:arch` | Create a new architecture document                        |
 | 4 — Architecture   | `/aid:arch-check`       | Validate requirements and architecture alignment          |
 | 4 — Architecture   | `/aid:arch-update`      | Sync architecture after requirement changes               |
-| Tech Stack         | `/aid:tech`             | Fill in `docs/tech_stack.md`                              |
+| Tech Stack         | `/aid:tech`             | Define or update `docs/tech_stack.md`                     |
 | Anytime            | `/aid:audit`            | Full project consistency check                            |
 | Anytime            | `/aid:status`           | Snapshot of project state                                 |
 | Anytime            | `/aid:security`   | Security analysis; updates `docs/security.md`             |

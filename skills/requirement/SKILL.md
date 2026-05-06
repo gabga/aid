@@ -29,7 +29,7 @@ Read silently:
 Ask the user which feature they want to work on if not already specified. Show the list of features from `docs/features/index.md` to help them select.
 
 Derive the feature slug per the conventions in CLAUDE.md. Check `docs/features/<slug>.md`:
-- If it does not exist, stop: "This feature doesn't have a feature brief yet. Run `/feature` first."
+- If it does not exist, stop: "This feature doesn't have a feature brief yet. Run `/aid:feature` first."
 
 ## Step 3: Identify the Requirement
 
@@ -47,7 +47,7 @@ List the existing requirement files in `docs/requirements/<feature-slug>/` (if a
 
 Read `docs/features/<slug>.md`.
 
-- If Status is `Concept` or `Scoped`, stop: "The feature brief isn't Ready yet — open questions or unconfirmed scope remain. Run `/feature` to finish the brief before writing requirements."
+- If Status is `Concept` or `Scoped`, stop: "The feature brief isn't Ready yet — open questions or unconfirmed scope remain. Run `/aid:feature` to finish the brief before writing requirements."
 
 Identify the requirement filename and ID:
 - If the brief's Requirements section lists the file for this sub-capability, use that filename.

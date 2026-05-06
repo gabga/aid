@@ -99,7 +99,7 @@ Only after user approval:
 4. Add the feature to `docs/features/index.md`.
 5. Update `docs/glossary.md` per the standing rules in CLAUDE.md if new domain terms were introduced.
 
-If Status is `Scoped` with no open questions, suggest: "This feature is ready for requirements. Run `/requirement` to write the technical spec."
+If Status is `Scoped` with no open questions, suggest: "This feature is ready for requirements. Run `/aid:requirement` to write the technical spec."
 
 ---
 

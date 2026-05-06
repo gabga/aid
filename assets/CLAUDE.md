@@ -38,6 +38,8 @@ CLAUDE.md                This file
 | Features | `docs/features/<slug>.md` | What each feature does, its UI, domain rules |
 | Requirements | `docs/requirements/<slug>/<name>.md` | Data model, API, business rules, acceptance criteria |
 | Architecture | `docs/architecture/<component>.md` | How components are structured and interact |
+| Technology | `docs/tech_stack.md` | Documented technology choices |
+| Security | `docs/security.md` | Security considerations |
 
 The Product, UI, Feature, and Requirement layers are architecture and tech-stack agnostic — they describe *what* the system does, not *how* it is built. One feature can have multiple requirement documents, each covering a coherent sub-capability with its own data, API surface, and UI.
 

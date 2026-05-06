@@ -130,7 +130,7 @@ Only after user approval:
 
 Tell the user what was written and what was left unchanged. Then suggest next steps:
 
-- "Run `/feature` for each feature to define its scope, UI, and domain rules before writing requirements."
-- "Run `/conventions` early to define the basic conventions."
-- "Run `/ui` once several features are Scoped to create the UI overview."
-- "Run `/requirement` only after a feature brief reaches Ready status."
+- "Run `/aid:feature` for each feature to define its scope, UI, and domain rules before writing requirements."
+- "Run `/aid:conventions` early to define the basic conventions."
+- "Run `/aid:ui` once several features are Scoped to create the UI overview."
+- "Run `/aid:requirement` only after a feature brief reaches Ready status."

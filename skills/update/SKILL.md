@@ -11,7 +11,7 @@ This command updates `CLAUDE.md` and the stub index files in the current project
 
 ## Step 1: Check Initialisation
 
-If `CLAUDE.md` does not exist at the repository root, stop: "This project has not been bootstrapped yet. Run `/bootstrap` first."
+If `CLAUDE.md` does not exist at the repository root, stop: "This project has not been bootstrapped yet. Run `/aid:bootstrap` first."
 
 ## Step 2: Compare CLAUDE.md
 
