@@ -1,6 +1,6 @@
 # AID — AI Aided Development
 
-A Claude Code plugin for AI aided software product development. Define your product, features, requirements, and architecture in structured Markdown — then hand them to Claude to implement, test, and deploy.
+A Claude Code plugin for AI aided software product development. Define your product, features, requirements, and architecture in structured Markdown — then use them to guide implementation — by your team, Claude, or any other AI tool.
 
 ## Install
 
